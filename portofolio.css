@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+}
+
+.pooh-jalan {
+    width: 250px; /* Atur ukuran gambar sesuai keinginan */
+    position: relative; /* Wajib ada supaya bisa geser posisi */
+    
+    /* Panggil animasinya */
+    animation-name: jalanKedepan;
+    animation-duration: 10s;    /* Durasi jalan (makin besar makin lambat) */
+    animation-iteration-count: infinite; /* Biar jalan terus ngga berhenti */
+    animation-timing-function: linear;   /* Biar jalannya stabil rata */
+}
+
+/* Instruksi Gerakannya */
+@keyframes jalanKedepan {
+    0% {
+        left: 0; /* Mulai dari posisi asli (kiri) */
+    }
+    100% {
+        left: 80%; /* Berhenti di 80% lebar layar (kanan) */
+    }
+}
+
+body
+{
+    background-color: #f0e68c;
+    font-style: caveat;
+}
+
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.2); /* Warna putih transparan */
+    backdrop-filter: blur(10px);        /* Efek kaca buram (Glassmorphism) */
+    border: 2px solid black;            /* Garis pinggir */
+    border-radius: 35px;                /* Ujungnya bulat */
+    padding: 10px;                      /* Jarak tulisan ke pinggir kotak */
+    width: 300px;                       /* Lebar papan */
+    margin: 30px auto;                  /* Posisi di tengah */
+    color: black;                       /* Warna tulisan */
+    text-align: center;
+    cursor: pointer;                    /* Ubah kursor jadi tangan saat menyentuh */
+    transition: all 0.3s ease;          /* Biar transisi perubahannya halus */
+    font-family: "Fredericka the Great", serif;
+}
+
+/* EFEK INTERAKTIF (SAAT DISENTUH MOUSE) */
+.papan-tombol:hover {
+    background: black;                  /* Berubah jadi putih solid */
+    color: #2a5298;                     /* Tulisan jadi biru tua */
+    transform: scale(1.1);              /* Kotak membesar dikit (10%) */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Tambah bayangan */
+}
