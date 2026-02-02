@@ -37,7 +37,7 @@ body
   font-style: normal;
 }
 
-h3 {
+h3, p {
     text-align: center;
     color: black;
     margin-top: 50px;
@@ -62,3 +62,4 @@ h3 {
     transform: scale(1.1);              /* Kotak membesar dikit (10%) */
     box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Tambah bayangan */
 }
+
